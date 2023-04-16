@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href= "/public/assets/styles.css" rel="stylesheet" type="text/css" />
+    <title>Document</title>
+  </head>
+  <body onload="countdown()">
+    <table>
+      <tr>
+        <th>Ticker</th>
+        <th>Start of Month</th>
+        <th>Open</th>
+        <th>Close</th>
+        <th><strong>$</strong>Change</th>
+        <th><strong>%</strong>Change</th>
+      </tr>
+      <tr>
+        <td>MSFT</td>
+        <td><%= data.one.open1monthH %></td>
+        <td><%= data.one.open1dayH %></td>
+        <td><%= data.one.current1dayH %></td>
+        <td><%= data.one.dollarChange1H %></td>
+        <td  class="percent"> <%= data.one.percentChange1H %></td>
+      </tr>
+      <tr>
+        <td>AAPL</td>
+        <td><%= data.two.open2monthH %></td>
+        <td><%= data.two.open2dayH %></td>
+        <td><%= data.two.current2dayH %></td>
+        <td><%= data.two.dollarChange2H%></td>
+        <td  class="percent"><%= data.two.percentChange2H %></td>
+      </tr>
+
+      <tr>
+        <td>ZETA</td>
+        <td><%= data.three.open3monthH %></td>
+        <td><%= data.three.open3dayH %></td>
+        <td><%= data.three.current3dayH %></td>
+        <td><%= data.three.dollarChange3H%></td>
+        <td  class="percent"><%= data.three.percentChange3H %></td>
+      </tr>
+      <tr>
+        <td>NFLX</td>
+        <td><%= data.four.open4monthH %></td>
+        <td><%= data.four.open4dayH %></td>
+        <td><%= data.four.current4dayH %></td>
+        <td><%= data.four.dollarChange4H%></td>
+        <td  class="percent"><%= data.four.percentChange4H %></td>
+      </tr>
+      <tr>
+        <td>DIS</td>
+        <td><%= data.five.open5monthH %></td>
+        <td><%= data.five.open5dayH %></td>
+        <td><%= data.five.current5dayH %></td>
+        <td><%= data.five.dollarChange5H%></td>
+        <td  class="percent"><%= data.five.percentChange5H %></td>
+      </tr>
+      <tr>
+        <td>AMZN</td>
+        <td><%= data.six.open6monthH %></td>
+        <td><%= data.six.open6dayH %></td>
+        <td><%= data.six.current6dayH %></td>
+        <td><%= data.six.dollarChange6H%></td>
+        <td class="percent"><%= data.six.percentChange6H %></td>
+      </tr>
+    </table>
+
+    <button id="colorBtn">Add Color</button>
+
+
+
+<script src="/public/assets/countdown.js"></script>
+<script src="/server.js"></script>
+  </body>
+</html>
